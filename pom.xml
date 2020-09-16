@@ -19,6 +19,7 @@
         <module>nativconfigserver</module>
         <module>nativeconfigclient</module>
         <module>configserver</module>
+        <module>configclient</module>
     </modules>
 
     <parent>

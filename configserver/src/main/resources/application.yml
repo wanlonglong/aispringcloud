@@ -1,31 +1,18 @@
 server:
-  port: 8888
+  port: 8881
 spring:
   application:
     name: configserver
   cloud:
-    bus:
-      trace:
-        enable: true
     config:
       server:
         git:
-          uri: https://github.com/southwind9801/myspringclouddemo.git
+          uri: https://github.com/wanlonglong/aispringcloud.git
           searchPaths: config
-          username: root
-          password: root
+          username: wanlonglong
+          password: de8326989
       label: master
-  rabbitmq:
-    host: localhost
-    port: 5672
-    username: guest
-    password: guest
 eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
-management:
-  endpoints:
-    web:
-      exposure:
-        include: bus-refresh
